@@ -35,6 +35,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <WindowsSdkRoot>$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformSDKLocation("Windows","10.0"))</WindowsSdkRoot>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.UI.UIAutomation">
       <HintPath>..\Microsoft.UI.UIAutomation\Generated Files\winmd\Microsoft.UI.UIAutomation.winmd</HintPath>
